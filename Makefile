@@ -1,3 +1,8 @@
 crawl:
-	python crawl_products.py
-	cat *csv
+	bin/crawler
+	
+build:
+	go build -o bin/crawler crawl_products.go
+	
+	
+.PHONY: crawl build 
